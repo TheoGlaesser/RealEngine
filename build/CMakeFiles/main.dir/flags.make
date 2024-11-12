@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/theoman/Coding/realEngine/current/Real/src/Real.h
+CXX_INCLUDES = -I/home/theoman/Coding/realEngine/current/Real/src/Real.h -I/home/theoman/Coding/realEngine/Real/vendor/spdlog/include
 
 CXX_FLAGS = 
 

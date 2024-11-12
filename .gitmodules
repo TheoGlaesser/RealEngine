@@ -1,3 +1,6 @@
 [submodule "Real/vendor/spdlog"]
 	path = Real/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "Real/vendor/glfw"]
+	path = Real/vendor/glfw
+	url = https://github.com/glfw/glfw.git

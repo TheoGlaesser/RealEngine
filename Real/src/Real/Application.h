@@ -1,5 +1,7 @@
 #pragma once 
 
+#include "Log.h"
+
 namespace Real
 {
 	class Application {

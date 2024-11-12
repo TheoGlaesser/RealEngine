@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/real.dir/cmake_pch.hxx.gch"
+  "CMakeFiles/real.dir/cmake_pch.hxx.gch.d"
   "CMakeFiles/real.dir/src/Real/Application.cpp.o"
   "CMakeFiles/real.dir/src/Real/Application.cpp.o.d"
+  "CMakeFiles/real.dir/src/Real/Log.cpp.o"
+  "CMakeFiles/real.dir/src/Real/Log.cpp.o.d"
   "libreal.pdb"
   "libreal.so"
 )

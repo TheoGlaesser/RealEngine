@@ -69,31 +69,67 @@ include CMakeFiles/real.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/real.dir/flags.make
 
+CMakeFiles/real.dir/cmake_pch.hxx.gch: CMakeFiles/real.dir/flags.make
+CMakeFiles/real.dir/cmake_pch.hxx.gch: CMakeFiles/real.dir/cmake_pch.hxx.cxx
+CMakeFiles/real.dir/cmake_pch.hxx.gch: CMakeFiles/real.dir/cmake_pch.hxx
+CMakeFiles/real.dir/cmake_pch.hxx.gch: CMakeFiles/real.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/theoman/Coding/realEngine/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/real.dir/cmake_pch.hxx.gch"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -x c++-header -include /home/theoman/Coding/realEngine/bin/CMakeFiles/real.dir/cmake_pch.hxx -MD -MT CMakeFiles/real.dir/cmake_pch.hxx.gch -MF CMakeFiles/real.dir/cmake_pch.hxx.gch.d -o CMakeFiles/real.dir/cmake_pch.hxx.gch -c /home/theoman/Coding/realEngine/bin/CMakeFiles/real.dir/cmake_pch.hxx.cxx
+
+CMakeFiles/real.dir/cmake_pch.hxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/real.dir/cmake_pch.hxx.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -x c++-header -include /home/theoman/Coding/realEngine/bin/CMakeFiles/real.dir/cmake_pch.hxx -E /home/theoman/Coding/realEngine/bin/CMakeFiles/real.dir/cmake_pch.hxx.cxx > CMakeFiles/real.dir/cmake_pch.hxx.i
+
+CMakeFiles/real.dir/cmake_pch.hxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/real.dir/cmake_pch.hxx.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -x c++-header -include /home/theoman/Coding/realEngine/bin/CMakeFiles/real.dir/cmake_pch.hxx -S /home/theoman/Coding/realEngine/bin/CMakeFiles/real.dir/cmake_pch.hxx.cxx -o CMakeFiles/real.dir/cmake_pch.hxx.s
+
 CMakeFiles/real.dir/src/Real/Application.cpp.o: CMakeFiles/real.dir/flags.make
 CMakeFiles/real.dir/src/Real/Application.cpp.o: /home/theoman/Coding/realEngine/Real/src/Real/Application.cpp
+CMakeFiles/real.dir/src/Real/Application.cpp.o: CMakeFiles/real.dir/cmake_pch.hxx
+CMakeFiles/real.dir/src/Real/Application.cpp.o: CMakeFiles/real.dir/cmake_pch.hxx.gch
 CMakeFiles/real.dir/src/Real/Application.cpp.o: CMakeFiles/real.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/theoman/Coding/realEngine/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/real.dir/src/Real/Application.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/real.dir/src/Real/Application.cpp.o -MF CMakeFiles/real.dir/src/Real/Application.cpp.o.d -o CMakeFiles/real.dir/src/Real/Application.cpp.o -c /home/theoman/Coding/realEngine/Real/src/Real/Application.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/theoman/Coding/realEngine/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/real.dir/src/Real/Application.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/theoman/Coding/realEngine/bin/CMakeFiles/real.dir/cmake_pch.hxx -MD -MT CMakeFiles/real.dir/src/Real/Application.cpp.o -MF CMakeFiles/real.dir/src/Real/Application.cpp.o.d -o CMakeFiles/real.dir/src/Real/Application.cpp.o -c /home/theoman/Coding/realEngine/Real/src/Real/Application.cpp
 
 CMakeFiles/real.dir/src/Real/Application.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/real.dir/src/Real/Application.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/theoman/Coding/realEngine/Real/src/Real/Application.cpp > CMakeFiles/real.dir/src/Real/Application.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/theoman/Coding/realEngine/bin/CMakeFiles/real.dir/cmake_pch.hxx -E /home/theoman/Coding/realEngine/Real/src/Real/Application.cpp > CMakeFiles/real.dir/src/Real/Application.cpp.i
 
 CMakeFiles/real.dir/src/Real/Application.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/real.dir/src/Real/Application.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/theoman/Coding/realEngine/Real/src/Real/Application.cpp -o CMakeFiles/real.dir/src/Real/Application.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/theoman/Coding/realEngine/bin/CMakeFiles/real.dir/cmake_pch.hxx -S /home/theoman/Coding/realEngine/Real/src/Real/Application.cpp -o CMakeFiles/real.dir/src/Real/Application.cpp.s
+
+CMakeFiles/real.dir/src/Real/Log.cpp.o: CMakeFiles/real.dir/flags.make
+CMakeFiles/real.dir/src/Real/Log.cpp.o: /home/theoman/Coding/realEngine/Real/src/Real/Log.cpp
+CMakeFiles/real.dir/src/Real/Log.cpp.o: CMakeFiles/real.dir/cmake_pch.hxx
+CMakeFiles/real.dir/src/Real/Log.cpp.o: CMakeFiles/real.dir/cmake_pch.hxx.gch
+CMakeFiles/real.dir/src/Real/Log.cpp.o: CMakeFiles/real.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/theoman/Coding/realEngine/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/real.dir/src/Real/Log.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/theoman/Coding/realEngine/bin/CMakeFiles/real.dir/cmake_pch.hxx -MD -MT CMakeFiles/real.dir/src/Real/Log.cpp.o -MF CMakeFiles/real.dir/src/Real/Log.cpp.o.d -o CMakeFiles/real.dir/src/Real/Log.cpp.o -c /home/theoman/Coding/realEngine/Real/src/Real/Log.cpp
+
+CMakeFiles/real.dir/src/Real/Log.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/real.dir/src/Real/Log.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/theoman/Coding/realEngine/bin/CMakeFiles/real.dir/cmake_pch.hxx -E /home/theoman/Coding/realEngine/Real/src/Real/Log.cpp > CMakeFiles/real.dir/src/Real/Log.cpp.i
+
+CMakeFiles/real.dir/src/Real/Log.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/real.dir/src/Real/Log.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/theoman/Coding/realEngine/bin/CMakeFiles/real.dir/cmake_pch.hxx -S /home/theoman/Coding/realEngine/Real/src/Real/Log.cpp -o CMakeFiles/real.dir/src/Real/Log.cpp.s
 
 # Object files for target real
 real_OBJECTS = \
-"CMakeFiles/real.dir/src/Real/Application.cpp.o"
+"CMakeFiles/real.dir/src/Real/Application.cpp.o" \
+"CMakeFiles/real.dir/src/Real/Log.cpp.o"
 
 # External object files for target real
 real_EXTERNAL_OBJECTS =
 
+libreal.so: CMakeFiles/real.dir/cmake_pch.hxx.gch
 libreal.so: CMakeFiles/real.dir/src/Real/Application.cpp.o
+libreal.so: CMakeFiles/real.dir/src/Real/Log.cpp.o
 libreal.so: CMakeFiles/real.dir/build.make
 libreal.so: CMakeFiles/real.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/theoman/Coding/realEngine/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libreal.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/theoman/Coding/realEngine/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library libreal.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/real.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

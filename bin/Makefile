@@ -129,6 +129,21 @@ real/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/real.dir/build.make CMakeFiles/real.dir/build
 .PHONY : real/fast
 
+# target to build an object file
+cmake_pch.hxx.gch:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/real.dir/build.make CMakeFiles/real.dir/cmake_pch.hxx.gch
+.PHONY : cmake_pch.hxx.gch
+
+# target to preprocess a source file
+cmake_pch.hxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/real.dir/build.make CMakeFiles/real.dir/cmake_pch.hxx.i
+.PHONY : cmake_pch.hxx.i
+
+# target to generate assembly for a file
+cmake_pch.hxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/real.dir/build.make CMakeFiles/real.dir/cmake_pch.hxx.s
+.PHONY : cmake_pch.hxx.s
+
 src/Real/Application.o: src/Real/Application.cpp.o
 .PHONY : src/Real/Application.o
 
@@ -153,6 +168,30 @@ src/Real/Application.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/real.dir/build.make CMakeFiles/real.dir/src/Real/Application.cpp.s
 .PHONY : src/Real/Application.cpp.s
 
+src/Real/Log.o: src/Real/Log.cpp.o
+.PHONY : src/Real/Log.o
+
+# target to build an object file
+src/Real/Log.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/real.dir/build.make CMakeFiles/real.dir/src/Real/Log.cpp.o
+.PHONY : src/Real/Log.cpp.o
+
+src/Real/Log.i: src/Real/Log.cpp.i
+.PHONY : src/Real/Log.i
+
+# target to preprocess a source file
+src/Real/Log.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/real.dir/build.make CMakeFiles/real.dir/src/Real/Log.cpp.i
+.PHONY : src/Real/Log.cpp.i
+
+src/Real/Log.s: src/Real/Log.cpp.s
+.PHONY : src/Real/Log.s
+
+# target to generate assembly for a file
+src/Real/Log.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/real.dir/build.make CMakeFiles/real.dir/src/Real/Log.cpp.s
+.PHONY : src/Real/Log.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,9 +201,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... real"
+	@echo "... cmake_pch.hxx.gch"
+	@echo "... cmake_pch.hxx.i"
+	@echo "... cmake_pch.hxx.s"
 	@echo "... src/Real/Application.o"
 	@echo "... src/Real/Application.i"
 	@echo "... src/Real/Application.s"
+	@echo "... src/Real/Log.o"
+	@echo "... src/Real/Log.i"
+	@echo "... src/Real/Log.s"
 .PHONY : help
 
 

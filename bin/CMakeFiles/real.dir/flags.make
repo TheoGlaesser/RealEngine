@@ -4,7 +4,13 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -Dreal_EXPORTS
 
-CXX_INCLUDES = -I/home/theoman/Coding/realEngine/Real/src/Real.h
+CXX_INCLUDES = -I/home/theoman/Coding/realEngine/Real/src -I/home/theoman/Coding/realEngine/Real/vendor/spdlog/include
 
 CXX_FLAGS = -fPIC
+
+# PCH options: CMakeFiles/real.dir/cmake_pch.hxx.gch_OPTIONS = -Winvalid-pch;-x;c++-header;-include;/home/theoman/Coding/realEngine/bin/CMakeFiles/real.dir/cmake_pch.hxx
+
+# PCH options: CMakeFiles/real.dir/src/Real/Application.cpp.o_OPTIONS = -Winvalid-pch;-include;/home/theoman/Coding/realEngine/bin/CMakeFiles/real.dir/cmake_pch.hxx
+
+# PCH options: CMakeFiles/real.dir/src/Real/Log.cpp.o_OPTIONS = -Winvalid-pch;-include;/home/theoman/Coding/realEngine/bin/CMakeFiles/real.dir/cmake_pch.hxx
 

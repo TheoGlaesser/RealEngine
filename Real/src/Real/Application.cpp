@@ -1,4 +1,9 @@
+#include "realpch.h"
 #include "Application.h"
+
+#include "Real/Events/Event.h"
+#include "Real/Events/ApplicationEvent.h"
+#include "Real/Log.h"
 
 namespace Real {
 
@@ -11,6 +16,9 @@ namespace Real {
 	}
 
 	void Application::run() {
-		while (true);
+    WindowResizeEvent e(1280, 720);
+    REAL_TRACE(e.toString());
+
+    while (true);
 	}
 }

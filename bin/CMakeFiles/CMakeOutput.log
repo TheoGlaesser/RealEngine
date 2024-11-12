@@ -447,3 +447,65 @@ Parsed CXX implicit link information from above output:
   implicit fwks: []
 
 
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/theoman/Coding/realEngine/bin/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_44a0f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_44a0f.dir/build.make CMakeFiles/cmTC_44a0f.dir/build
+gmake[1]: Verzeichnis „/home/theoman/Coding/realEngine/bin/CMakeFiles/CMakeTmp“ wird betreten
+Building C object CMakeFiles/cmTC_44a0f.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_44a0f.dir/CheckIncludeFile.c.o -c /home/theoman/Coding/realEngine/bin/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_44a0f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_44a0f.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_44a0f.dir/CheckIncludeFile.c.o -o cmTC_44a0f 
+gmake[1]: Verzeichnis „/home/theoman/Coding/realEngine/bin/CMakeFiles/CMakeTmp“ wird verlassen
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /home/theoman/Coding/realEngine/bin/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cf92f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cf92f.dir/build.make CMakeFiles/cmTC_cf92f.dir/build
+gmake[1]: Verzeichnis „/home/theoman/Coding/realEngine/bin/CMakeFiles/CMakeTmp“ wird betreten
+Building C object CMakeFiles/cmTC_cf92f.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_cf92f.dir/src.c.o -c /home/theoman/Coding/realEngine/bin/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_cf92f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf92f.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_cf92f.dir/src.c.o -o cmTC_cf92f 
+gmake[1]: Verzeichnis „/home/theoman/Coding/realEngine/bin/CMakeFiles/CMakeTmp“ wird verlassen
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function memfd_create exists passed with the following output:
+Change Dir: /home/theoman/Coding/realEngine/bin/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2f1e3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2f1e3.dir/build.make CMakeFiles/cmTC_2f1e3.dir/build
+gmake[1]: Verzeichnis „/home/theoman/Coding/realEngine/bin/CMakeFiles/CMakeTmp“ wird betreten
+Building C object CMakeFiles/cmTC_2f1e3.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=memfd_create -o CMakeFiles/cmTC_2f1e3.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2f1e3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2f1e3.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=memfd_create CMakeFiles/cmTC_2f1e3.dir/CheckFunctionExists.c.o -o cmTC_2f1e3 
+gmake[1]: Verzeichnis „/home/theoman/Coding/realEngine/bin/CMakeFiles/CMakeTmp“ wird verlassen
+
+
+
