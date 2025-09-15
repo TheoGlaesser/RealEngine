@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Real/Core.h"
+#include "../Core.h"
 
 
 namespace Real {
@@ -46,7 +46,7 @@ namespace Real {
     {
       return getCategoryFlags()& category;
     }
-  protected:
+
     bool m_Handled = false;
   };
 
@@ -60,7 +60,7 @@ namespace Real {
       : m_Event(event) {}
 
     template<typename T>
-    bool Dispatch(EventFn<T> func)
+    bool dispatch(EventFn<T> func)
     {
       if(m_Event.getEventType() == T::getStaticType())
       {

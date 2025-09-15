@@ -116,10 +116,61 @@ CMakeFiles/real.dir/src/Real/Log.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/real.dir/src/Real/Log.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/theoman/Coding/realEngine/bin/CMakeFiles/real.dir/cmake_pch.hxx -S /home/theoman/Coding/realEngine/Real/src/Real/Log.cpp -o CMakeFiles/real.dir/src/Real/Log.cpp.s
 
+CMakeFiles/real.dir/src/Real/Layerstack.cpp.o: CMakeFiles/real.dir/flags.make
+CMakeFiles/real.dir/src/Real/Layerstack.cpp.o: /home/theoman/Coding/realEngine/Real/src/Real/Layerstack.cpp
+CMakeFiles/real.dir/src/Real/Layerstack.cpp.o: CMakeFiles/real.dir/cmake_pch.hxx
+CMakeFiles/real.dir/src/Real/Layerstack.cpp.o: CMakeFiles/real.dir/cmake_pch.hxx.gch
+CMakeFiles/real.dir/src/Real/Layerstack.cpp.o: CMakeFiles/real.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/theoman/Coding/realEngine/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/real.dir/src/Real/Layerstack.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/theoman/Coding/realEngine/bin/CMakeFiles/real.dir/cmake_pch.hxx -MD -MT CMakeFiles/real.dir/src/Real/Layerstack.cpp.o -MF CMakeFiles/real.dir/src/Real/Layerstack.cpp.o.d -o CMakeFiles/real.dir/src/Real/Layerstack.cpp.o -c /home/theoman/Coding/realEngine/Real/src/Real/Layerstack.cpp
+
+CMakeFiles/real.dir/src/Real/Layerstack.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/real.dir/src/Real/Layerstack.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/theoman/Coding/realEngine/bin/CMakeFiles/real.dir/cmake_pch.hxx -E /home/theoman/Coding/realEngine/Real/src/Real/Layerstack.cpp > CMakeFiles/real.dir/src/Real/Layerstack.cpp.i
+
+CMakeFiles/real.dir/src/Real/Layerstack.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/real.dir/src/Real/Layerstack.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/theoman/Coding/realEngine/bin/CMakeFiles/real.dir/cmake_pch.hxx -S /home/theoman/Coding/realEngine/Real/src/Real/Layerstack.cpp -o CMakeFiles/real.dir/src/Real/Layerstack.cpp.s
+
+CMakeFiles/real.dir/src/Real/Layer.cpp.o: CMakeFiles/real.dir/flags.make
+CMakeFiles/real.dir/src/Real/Layer.cpp.o: /home/theoman/Coding/realEngine/Real/src/Real/Layer.cpp
+CMakeFiles/real.dir/src/Real/Layer.cpp.o: CMakeFiles/real.dir/cmake_pch.hxx
+CMakeFiles/real.dir/src/Real/Layer.cpp.o: CMakeFiles/real.dir/cmake_pch.hxx.gch
+CMakeFiles/real.dir/src/Real/Layer.cpp.o: CMakeFiles/real.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/theoman/Coding/realEngine/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/real.dir/src/Real/Layer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/theoman/Coding/realEngine/bin/CMakeFiles/real.dir/cmake_pch.hxx -MD -MT CMakeFiles/real.dir/src/Real/Layer.cpp.o -MF CMakeFiles/real.dir/src/Real/Layer.cpp.o.d -o CMakeFiles/real.dir/src/Real/Layer.cpp.o -c /home/theoman/Coding/realEngine/Real/src/Real/Layer.cpp
+
+CMakeFiles/real.dir/src/Real/Layer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/real.dir/src/Real/Layer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/theoman/Coding/realEngine/bin/CMakeFiles/real.dir/cmake_pch.hxx -E /home/theoman/Coding/realEngine/Real/src/Real/Layer.cpp > CMakeFiles/real.dir/src/Real/Layer.cpp.i
+
+CMakeFiles/real.dir/src/Real/Layer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/real.dir/src/Real/Layer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/theoman/Coding/realEngine/bin/CMakeFiles/real.dir/cmake_pch.hxx -S /home/theoman/Coding/realEngine/Real/src/Real/Layer.cpp -o CMakeFiles/real.dir/src/Real/Layer.cpp.s
+
+CMakeFiles/real.dir/src/Platform/Ubuntu/UbuntuWindow.cpp.o: CMakeFiles/real.dir/flags.make
+CMakeFiles/real.dir/src/Platform/Ubuntu/UbuntuWindow.cpp.o: /home/theoman/Coding/realEngine/Real/src/Platform/Ubuntu/UbuntuWindow.cpp
+CMakeFiles/real.dir/src/Platform/Ubuntu/UbuntuWindow.cpp.o: CMakeFiles/real.dir/cmake_pch.hxx
+CMakeFiles/real.dir/src/Platform/Ubuntu/UbuntuWindow.cpp.o: CMakeFiles/real.dir/cmake_pch.hxx.gch
+CMakeFiles/real.dir/src/Platform/Ubuntu/UbuntuWindow.cpp.o: CMakeFiles/real.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/theoman/Coding/realEngine/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/real.dir/src/Platform/Ubuntu/UbuntuWindow.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/theoman/Coding/realEngine/bin/CMakeFiles/real.dir/cmake_pch.hxx -MD -MT CMakeFiles/real.dir/src/Platform/Ubuntu/UbuntuWindow.cpp.o -MF CMakeFiles/real.dir/src/Platform/Ubuntu/UbuntuWindow.cpp.o.d -o CMakeFiles/real.dir/src/Platform/Ubuntu/UbuntuWindow.cpp.o -c /home/theoman/Coding/realEngine/Real/src/Platform/Ubuntu/UbuntuWindow.cpp
+
+CMakeFiles/real.dir/src/Platform/Ubuntu/UbuntuWindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/real.dir/src/Platform/Ubuntu/UbuntuWindow.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/theoman/Coding/realEngine/bin/CMakeFiles/real.dir/cmake_pch.hxx -E /home/theoman/Coding/realEngine/Real/src/Platform/Ubuntu/UbuntuWindow.cpp > CMakeFiles/real.dir/src/Platform/Ubuntu/UbuntuWindow.cpp.i
+
+CMakeFiles/real.dir/src/Platform/Ubuntu/UbuntuWindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/real.dir/src/Platform/Ubuntu/UbuntuWindow.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /home/theoman/Coding/realEngine/bin/CMakeFiles/real.dir/cmake_pch.hxx -S /home/theoman/Coding/realEngine/Real/src/Platform/Ubuntu/UbuntuWindow.cpp -o CMakeFiles/real.dir/src/Platform/Ubuntu/UbuntuWindow.cpp.s
+
 # Object files for target real
 real_OBJECTS = \
 "CMakeFiles/real.dir/src/Real/Application.cpp.o" \
-"CMakeFiles/real.dir/src/Real/Log.cpp.o"
+"CMakeFiles/real.dir/src/Real/Log.cpp.o" \
+"CMakeFiles/real.dir/src/Real/Layerstack.cpp.o" \
+"CMakeFiles/real.dir/src/Real/Layer.cpp.o" \
+"CMakeFiles/real.dir/src/Platform/Ubuntu/UbuntuWindow.cpp.o"
 
 # External object files for target real
 real_EXTERNAL_OBJECTS =
@@ -127,9 +178,16 @@ real_EXTERNAL_OBJECTS =
 libreal.so: CMakeFiles/real.dir/cmake_pch.hxx.gch
 libreal.so: CMakeFiles/real.dir/src/Real/Application.cpp.o
 libreal.so: CMakeFiles/real.dir/src/Real/Log.cpp.o
+libreal.so: CMakeFiles/real.dir/src/Real/Layerstack.cpp.o
+libreal.so: CMakeFiles/real.dir/src/Real/Layer.cpp.o
+libreal.so: CMakeFiles/real.dir/src/Platform/Ubuntu/UbuntuWindow.cpp.o
 libreal.so: CMakeFiles/real.dir/build.make
+libreal.so: vendor/glfw/src/libglfw3.a
+libreal.so: vendor/glad/libglad.a
+libreal.so: /usr/lib/x86_64-linux-gnu/librt.a
+libreal.so: /usr/lib/x86_64-linux-gnu/libm.so
 libreal.so: CMakeFiles/real.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/theoman/Coding/realEngine/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library libreal.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/theoman/Coding/realEngine/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX shared library libreal.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/real.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -449,3 +449,149 @@ Parsed CXX implicit link information from above output:
   implicit fwks: []
 
 
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/theoman/Coding/realEngine/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f3f9c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f3f9c.dir/build.make CMakeFiles/cmTC_f3f9c.dir/build
+gmake[1]: Verzeichnis „/home/theoman/Coding/realEngine/build/CMakeFiles/CMakeTmp“ wird betreten
+Building C object CMakeFiles/cmTC_f3f9c.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_f3f9c.dir/CheckIncludeFile.c.o -c /home/theoman/Coding/realEngine/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_f3f9c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f3f9c.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_f3f9c.dir/CheckIncludeFile.c.o -o cmTC_f3f9c 
+gmake[1]: Verzeichnis „/home/theoman/Coding/realEngine/build/CMakeFiles/CMakeTmp“ wird verlassen
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /home/theoman/Coding/realEngine/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d1fab/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d1fab.dir/build.make CMakeFiles/cmTC_d1fab.dir/build
+gmake[1]: Verzeichnis „/home/theoman/Coding/realEngine/build/CMakeFiles/CMakeTmp“ wird betreten
+Building C object CMakeFiles/cmTC_d1fab.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_d1fab.dir/src.c.o -c /home/theoman/Coding/realEngine/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_d1fab
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d1fab.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_d1fab.dir/src.c.o -o cmTC_d1fab 
+gmake[1]: Verzeichnis „/home/theoman/Coding/realEngine/build/CMakeFiles/CMakeTmp“ wird verlassen
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function memfd_create exists passed with the following output:
+Change Dir: /home/theoman/Coding/realEngine/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5becb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5becb.dir/build.make CMakeFiles/cmTC_5becb.dir/build
+gmake[1]: Verzeichnis „/home/theoman/Coding/realEngine/build/CMakeFiles/CMakeTmp“ wird betreten
+Building C object CMakeFiles/cmTC_5becb.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=memfd_create -o CMakeFiles/cmTC_5becb.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5becb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5becb.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=memfd_create CMakeFiles/cmTC_5becb.dir/CheckFunctionExists.c.o -o cmTC_5becb 
+gmake[1]: Verzeichnis „/home/theoman/Coding/realEngine/build/CMakeFiles/CMakeTmp“ wird verlassen
+
+
+
+Determining if the function XOpenDisplay exists in the /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so passed with the following output:
+Change Dir: /home/theoman/Coding/realEngine/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a1b4d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a1b4d.dir/build.make CMakeFiles/cmTC_a1b4d.dir/build
+gmake[1]: Verzeichnis „/home/theoman/Coding/realEngine/build/CMakeFiles/CMakeTmp“ wird betreten
+Building C object CMakeFiles/cmTC_a1b4d.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -o CMakeFiles/cmTC_a1b4d.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a1b4d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1b4d.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay CMakeFiles/cmTC_a1b4d.dir/CheckFunctionExists.c.o -o cmTC_a1b4d  /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so 
+gmake[1]: Verzeichnis „/home/theoman/Coding/realEngine/build/CMakeFiles/CMakeTmp“ wird verlassen
+
+
+
+Determining if the function gethostbyname exists passed with the following output:
+Change Dir: /home/theoman/Coding/realEngine/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_73f1c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_73f1c.dir/build.make CMakeFiles/cmTC_73f1c.dir/build
+gmake[1]: Verzeichnis „/home/theoman/Coding/realEngine/build/CMakeFiles/CMakeTmp“ wird betreten
+Building C object CMakeFiles/cmTC_73f1c.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname -o CMakeFiles/cmTC_73f1c.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_73f1c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_73f1c.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname CMakeFiles/cmTC_73f1c.dir/CheckFunctionExists.c.o -o cmTC_73f1c 
+gmake[1]: Verzeichnis „/home/theoman/Coding/realEngine/build/CMakeFiles/CMakeTmp“ wird verlassen
+
+
+
+Determining if the function connect exists passed with the following output:
+Change Dir: /home/theoman/Coding/realEngine/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_47733/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_47733.dir/build.make CMakeFiles/cmTC_47733.dir/build
+gmake[1]: Verzeichnis „/home/theoman/Coding/realEngine/build/CMakeFiles/CMakeTmp“ wird betreten
+Building C object CMakeFiles/cmTC_47733.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect -o CMakeFiles/cmTC_47733.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_47733
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_47733.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=connect CMakeFiles/cmTC_47733.dir/CheckFunctionExists.c.o -o cmTC_47733 
+gmake[1]: Verzeichnis „/home/theoman/Coding/realEngine/build/CMakeFiles/CMakeTmp“ wird verlassen
+
+
+
+Determining if the function remove exists passed with the following output:
+Change Dir: /home/theoman/Coding/realEngine/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d4e50/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d4e50.dir/build.make CMakeFiles/cmTC_d4e50.dir/build
+gmake[1]: Verzeichnis „/home/theoman/Coding/realEngine/build/CMakeFiles/CMakeTmp“ wird betreten
+Building C object CMakeFiles/cmTC_d4e50.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove -o CMakeFiles/cmTC_d4e50.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d4e50
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d4e50.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=remove CMakeFiles/cmTC_d4e50.dir/CheckFunctionExists.c.o -o cmTC_d4e50 
+gmake[1]: Verzeichnis „/home/theoman/Coding/realEngine/build/CMakeFiles/CMakeTmp“ wird verlassen
+
+
+
+Determining if the function shmat exists passed with the following output:
+Change Dir: /home/theoman/Coding/realEngine/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b5238/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b5238.dir/build.make CMakeFiles/cmTC_b5238.dir/build
+gmake[1]: Verzeichnis „/home/theoman/Coding/realEngine/build/CMakeFiles/CMakeTmp“ wird betreten
+Building C object CMakeFiles/cmTC_b5238.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat -o CMakeFiles/cmTC_b5238.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b5238
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5238.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shmat CMakeFiles/cmTC_b5238.dir/CheckFunctionExists.c.o -o cmTC_b5238 
+gmake[1]: Verzeichnis „/home/theoman/Coding/realEngine/build/CMakeFiles/CMakeTmp“ wird verlassen
+
+
+
+Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
+Change Dir: /home/theoman/Coding/realEngine/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1766c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1766c.dir/build.make CMakeFiles/cmTC_1766c.dir/build
+gmake[1]: Verzeichnis „/home/theoman/Coding/realEngine/build/CMakeFiles/CMakeTmp“ wird betreten
+Building C object CMakeFiles/cmTC_1766c.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -o CMakeFiles/cmTC_1766c.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_1766c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1766c.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber CMakeFiles/cmTC_1766c.dir/CheckFunctionExists.c.o -o cmTC_1766c  -lICE 
+gmake[1]: Verzeichnis „/home/theoman/Coding/realEngine/build/CMakeFiles/CMakeTmp“ wird verlassen
+
+
+

@@ -35,9 +35,9 @@ namespace Real {
       return ss.str();
     }
 
-    EVENT_CLASS_TYPE(KeyPressed);
+    EVENT_CLASS_TYPE(EventType::KeyPressed);
   private:
-    m_repeatCount;
+    int m_repeatCount;
 
   };
 
@@ -48,12 +48,12 @@ namespace Real {
   
     std::string toString() const override 
     {
-      std::sstream ss;
+      std::stringstream ss;
       ss << "KeyReleasedEvent: " << m_keyCode;
       return ss.str();
     }
-
-    EVENT_CLASS_TYPE(KeyReleased);
+    
+    EVENT_CLASS_TYPE(EventType::KeyReleased);
   };
 
 }

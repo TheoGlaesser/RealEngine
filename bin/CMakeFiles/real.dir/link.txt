@@ -1,1 +1,1 @@
-/usr/bin/c++ -fPIC -shared -Wl,-soname,libreal.so -o libreal.so CMakeFiles/real.dir/src/Real/Application.cpp.o CMakeFiles/real.dir/src/Real/Log.cpp.o 
+/usr/bin/c++ -fPIC -fPIC -shared -Wl,-soname,libreal.so -o libreal.so CMakeFiles/real.dir/src/Real/Application.cpp.o CMakeFiles/real.dir/src/Real/Log.cpp.o CMakeFiles/real.dir/src/Real/Layerstack.cpp.o CMakeFiles/real.dir/src/Real/Layer.cpp.o CMakeFiles/real.dir/src/Platform/Ubuntu/UbuntuWindow.cpp.o  vendor/glfw/src/libglfw3.a vendor/glad/libglad.a /usr/lib/x86_64-linux-gnu/librt.a -lm -ldl 

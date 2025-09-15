@@ -7,6 +7,7 @@ CMakeFiles/main.dir/Sandbox/src/Application.cpp.o: ../Sandbox/src/Application.cp
   ../Real/src/Real/Application.h \
   ../Real/src/Real/Log.h \
   ../Real/src/Real/Core.h \
+  ../Real/src/Real/Utility/debugbreak.h \
   ../Real/vendor/spdlog/include/spdlog/spdlog.h \
   ../Real/vendor/spdlog/include/spdlog/common.h \
   ../Real/vendor/spdlog/include/spdlog/details/null_mutex.h \
@@ -376,10 +377,18 @@ CMakeFiles/main.dir/Sandbox/src/Application.cpp.o: ../Sandbox/src/Application.cp
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
   /usr/include/c++/11/bits/fstream.tcc \
+  ../Real/src/Real/Window.h \
+  ../Real/src/Real/Events/Event.h \
+  ../Real/src/Real/Layerstack.h \
+  ../Real/src/Real/Layer.h \
   ../Real/src/Real/EntryPoint.h
 
 
 ../Real/src/Real/EntryPoint.h:
+
+../Real/src/Real/Layer.h:
+
+../Real/src/Real/Window.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
 
@@ -581,6 +590,8 @@ CMakeFiles/main.dir/Sandbox/src/Application.cpp.o: ../Sandbox/src/Application.cp
 
 /usr/include/c++/11/backward/binders.h:
 
+../Real/src/Real/Layerstack.h:
+
 /usr/include/c++/11/algorithm:
 
 /usr/include/c++/11/bits/nested_exception.h:
@@ -634,6 +645,10 @@ CMakeFiles/main.dir/Sandbox/src/Application.cpp.o: ../Sandbox/src/Application.cp
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+
+/usr/include/c++/11/debug/assertions.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
 
 /usr/include/c++/11/pstl/pstl_config.h:
 
@@ -700,6 +715,18 @@ CMakeFiles/main.dir/Sandbox/src/Application.cpp.o: ../Sandbox/src/Application.cp
 /usr/include/errno.h:
 
 /usr/include/features.h:
+
+/usr/include/c++/11/bits/basic_ios.tcc:
+
+/usr/include/c++/11/bits/codecvt.h:
+
+/usr/include/c++/11/bits/enable_special_members.h:
+
+/usr/include/x86_64-linux-gnu/bits/environments.h:
+
+/usr/include/c++/11/bits/exception_defines.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
 
 /usr/include/c++/11/chrono:
 
@@ -775,6 +802,8 @@ CMakeFiles/main.dir/Sandbox/src/Application.cpp.o: ../Sandbox/src/Application.cp
 
 /usr/include/c++/11/ext/atomicity.h:
 
+../Real/src/Real/Utility/debugbreak.h:
+
 /usr/include/c++/11/bits/std_function.h:
 
 /usr/include/c++/11/bits/stl_tempbuf.h:
@@ -808,18 +837,6 @@ CMakeFiles/main.dir/Sandbox/src/Application.cpp.o: ../Sandbox/src/Application.cp
 /usr/include/c++/11/bits/stl_algobase.h:
 
 ../Real/vendor/spdlog/include/spdlog/spdlog.h:
-
-/usr/include/c++/11/bits/basic_ios.tcc:
-
-/usr/include/c++/11/bits/codecvt.h:
-
-/usr/include/c++/11/bits/enable_special_members.h:
-
-/usr/include/x86_64-linux-gnu/bits/environments.h:
-
-/usr/include/c++/11/bits/exception_defines.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
 
 /usr/include/c++/11/bits/erase_if.h:
 
@@ -890,10 +907,6 @@ CMakeFiles/main.dir/Sandbox/src/Application.cpp.o: ../Sandbox/src/Application.cp
 ../Real/src/Real/Application.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
-
-/usr/include/c++/11/debug/assertions.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
 
 /usr/include/c++/11/bits/vector.tcc:
 
@@ -967,6 +980,8 @@ CMakeFiles/main.dir/Sandbox/src/Application.cpp.o: ../Sandbox/src/Application.cp
 
 /usr/include/c++/11/bits/unique_ptr.h:
 
+../Real/src/Real/Events/Event.h:
+
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
 /usr/include/c++/11/bits/range_access.h:
@@ -993,9 +1008,9 @@ CMakeFiles/main.dir/Sandbox/src/Application.cpp.o: ../Sandbox/src/Application.cp
 
 /usr/include/x86_64-linux-gnu/bits/sched.h:
 
-/usr/include/c++/11/bits/stl_bvector.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+/usr/include/c++/11/bits/stl_bvector.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 

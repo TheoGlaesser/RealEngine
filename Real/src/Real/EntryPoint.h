@@ -3,13 +3,14 @@
 
 extern Real::Application* Real::createApplication();
 
-int main() {
+int main() 
+{
   Real::Log::Init();
   REAL_WARN("Initialized Log!");
   REAL_INFO("Initialized Log!");
 
-	auto app = Real::createApplication();
-	app->run();
+  auto app = Real::createApplication();
+  app->run();
 	delete app;
 
 

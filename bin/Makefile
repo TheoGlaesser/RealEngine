@@ -85,6 +85,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/theoman/Coding/realEngine/bin/CMakeFiles /home/theoman/Coding/realEngine/bin//CMakeFiles/progress.marks
@@ -129,6 +174,58 @@ real/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/real.dir/build.make CMakeFiles/real.dir/build
 .PHONY : real/fast
 
+#=============================================================================
+# Target rules for targets named uninstall
+
+# Build rule for target.
+uninstall: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 uninstall
+.PHONY : uninstall
+
+# fast build rule for target.
+uninstall/fast:
+	$(MAKE) $(MAKESILENT) -f vendor/glfw/CMakeFiles/uninstall.dir/build.make vendor/glfw/CMakeFiles/uninstall.dir/build
+.PHONY : uninstall/fast
+
+#=============================================================================
+# Target rules for targets named glfw
+
+# Build rule for target.
+glfw: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw
+.PHONY : glfw
+
+# fast build rule for target.
+glfw/fast:
+	$(MAKE) $(MAKESILENT) -f vendor/glfw/src/CMakeFiles/glfw.dir/build.make vendor/glfw/src/CMakeFiles/glfw.dir/build
+.PHONY : glfw/fast
+
+#=============================================================================
+# Target rules for targets named update_mappings
+
+# Build rule for target.
+update_mappings: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 update_mappings
+.PHONY : update_mappings
+
+# fast build rule for target.
+update_mappings/fast:
+	$(MAKE) $(MAKESILENT) -f vendor/glfw/src/CMakeFiles/update_mappings.dir/build.make vendor/glfw/src/CMakeFiles/update_mappings.dir/build
+.PHONY : update_mappings/fast
+
+#=============================================================================
+# Target rules for targets named glad
+
+# Build rule for target.
+glad: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glad
+.PHONY : glad
+
+# fast build rule for target.
+glad/fast:
+	$(MAKE) $(MAKESILENT) -f vendor/glad/CMakeFiles/glad.dir/build.make vendor/glad/CMakeFiles/glad.dir/build
+.PHONY : glad/fast
+
 # target to build an object file
 cmake_pch.hxx.gch:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/real.dir/build.make CMakeFiles/real.dir/cmake_pch.hxx.gch
@@ -143,6 +240,30 @@ cmake_pch.hxx.i:
 cmake_pch.hxx.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/real.dir/build.make CMakeFiles/real.dir/cmake_pch.hxx.s
 .PHONY : cmake_pch.hxx.s
+
+src/Platform/Ubuntu/UbuntuWindow.o: src/Platform/Ubuntu/UbuntuWindow.cpp.o
+.PHONY : src/Platform/Ubuntu/UbuntuWindow.o
+
+# target to build an object file
+src/Platform/Ubuntu/UbuntuWindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/real.dir/build.make CMakeFiles/real.dir/src/Platform/Ubuntu/UbuntuWindow.cpp.o
+.PHONY : src/Platform/Ubuntu/UbuntuWindow.cpp.o
+
+src/Platform/Ubuntu/UbuntuWindow.i: src/Platform/Ubuntu/UbuntuWindow.cpp.i
+.PHONY : src/Platform/Ubuntu/UbuntuWindow.i
+
+# target to preprocess a source file
+src/Platform/Ubuntu/UbuntuWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/real.dir/build.make CMakeFiles/real.dir/src/Platform/Ubuntu/UbuntuWindow.cpp.i
+.PHONY : src/Platform/Ubuntu/UbuntuWindow.cpp.i
+
+src/Platform/Ubuntu/UbuntuWindow.s: src/Platform/Ubuntu/UbuntuWindow.cpp.s
+.PHONY : src/Platform/Ubuntu/UbuntuWindow.s
+
+# target to generate assembly for a file
+src/Platform/Ubuntu/UbuntuWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/real.dir/build.make CMakeFiles/real.dir/src/Platform/Ubuntu/UbuntuWindow.cpp.s
+.PHONY : src/Platform/Ubuntu/UbuntuWindow.cpp.s
 
 src/Real/Application.o: src/Real/Application.cpp.o
 .PHONY : src/Real/Application.o
@@ -167,6 +288,54 @@ src/Real/Application.s: src/Real/Application.cpp.s
 src/Real/Application.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/real.dir/build.make CMakeFiles/real.dir/src/Real/Application.cpp.s
 .PHONY : src/Real/Application.cpp.s
+
+src/Real/Layer.o: src/Real/Layer.cpp.o
+.PHONY : src/Real/Layer.o
+
+# target to build an object file
+src/Real/Layer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/real.dir/build.make CMakeFiles/real.dir/src/Real/Layer.cpp.o
+.PHONY : src/Real/Layer.cpp.o
+
+src/Real/Layer.i: src/Real/Layer.cpp.i
+.PHONY : src/Real/Layer.i
+
+# target to preprocess a source file
+src/Real/Layer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/real.dir/build.make CMakeFiles/real.dir/src/Real/Layer.cpp.i
+.PHONY : src/Real/Layer.cpp.i
+
+src/Real/Layer.s: src/Real/Layer.cpp.s
+.PHONY : src/Real/Layer.s
+
+# target to generate assembly for a file
+src/Real/Layer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/real.dir/build.make CMakeFiles/real.dir/src/Real/Layer.cpp.s
+.PHONY : src/Real/Layer.cpp.s
+
+src/Real/Layerstack.o: src/Real/Layerstack.cpp.o
+.PHONY : src/Real/Layerstack.o
+
+# target to build an object file
+src/Real/Layerstack.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/real.dir/build.make CMakeFiles/real.dir/src/Real/Layerstack.cpp.o
+.PHONY : src/Real/Layerstack.cpp.o
+
+src/Real/Layerstack.i: src/Real/Layerstack.cpp.i
+.PHONY : src/Real/Layerstack.i
+
+# target to preprocess a source file
+src/Real/Layerstack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/real.dir/build.make CMakeFiles/real.dir/src/Real/Layerstack.cpp.i
+.PHONY : src/Real/Layerstack.cpp.i
+
+src/Real/Layerstack.s: src/Real/Layerstack.cpp.s
+.PHONY : src/Real/Layerstack.s
+
+# target to generate assembly for a file
+src/Real/Layerstack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/real.dir/build.make CMakeFiles/real.dir/src/Real/Layerstack.cpp.s
+.PHONY : src/Real/Layerstack.cpp.s
 
 src/Real/Log.o: src/Real/Log.cpp.o
 .PHONY : src/Real/Log.o
@@ -199,14 +368,31 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... uninstall"
+	@echo "... update_mappings"
+	@echo "... glad"
+	@echo "... glfw"
 	@echo "... real"
 	@echo "... cmake_pch.hxx.gch"
 	@echo "... cmake_pch.hxx.i"
 	@echo "... cmake_pch.hxx.s"
+	@echo "... src/Platform/Ubuntu/UbuntuWindow.o"
+	@echo "... src/Platform/Ubuntu/UbuntuWindow.i"
+	@echo "... src/Platform/Ubuntu/UbuntuWindow.s"
 	@echo "... src/Real/Application.o"
 	@echo "... src/Real/Application.i"
 	@echo "... src/Real/Application.s"
+	@echo "... src/Real/Layer.o"
+	@echo "... src/Real/Layer.i"
+	@echo "... src/Real/Layer.s"
+	@echo "... src/Real/Layerstack.o"
+	@echo "... src/Real/Layerstack.i"
+	@echo "... src/Real/Layerstack.s"
 	@echo "... src/Real/Log.o"
 	@echo "... src/Real/Log.i"
 	@echo "... src/Real/Log.s"

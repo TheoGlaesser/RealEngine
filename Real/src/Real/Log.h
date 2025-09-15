@@ -23,6 +23,7 @@ namespace Real {
 
 
 	};
+
 }
 
 #define REAL_CORE_ERROR(...)   ::Real::Log::GetCoreLogger()->error(__VA_ARGS__)
